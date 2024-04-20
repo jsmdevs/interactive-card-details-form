@@ -1,0 +1,25 @@
+// Colors
+
+//// Primary
+$colorError: hsl(0, 100%, 66%);
+$colorHover: hsl(249, 99%, 64%);
+$colorActive: hsl(278, 94%, 30%);
+
+//// Neutral
+
+$colorWhite: hsl(0, 0%, 100%);
+$colorLightGrayishViolet: hsl(270, 3%, 87%);
+$colorDarkGrayishViolet: hsl(279, 6%, 55%);
+$colorVeryDarkViolet: hsl(278, 68%, 11%);
+
+// Typography
+
+//// Body Copy
+
+$fontBody: 18px;
+
+// Font
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+$fontWeight: 500;

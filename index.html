@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-front">
+        <img src="assets/images/bg-card-front.png" alt="">
+        <div class="data-logo-card-front">
+          <img class="logo-tarjeta" src="assets/images/logo/card-logo.svg" alt="">
+          <div class="data-card">
+            <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+            <div class="card-name-exp">
+              <p class="card-name" id="card-name">Jame Appleseed</p>
+              <p class="card-date" id="card-dyate">00/00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-back">
+        <img src="assets/images/bg-card-back.png" alt="">
+        <div class="data-card-back">
+          <p>000</p>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <form action="">
+        <div class="form-group">
+          <label for="name">Cardholder Name</label>
+          <input id="cardName" name="cardName" type="text" placeholder="e.g Jane Appleseed" autocomplete="cc-name"
+            required />
+        </div>
+        <div class="form-group">
+          <label for="name">Card Number</label>
+          <input id="cardNumber" name="cardNumber" type="text" placeholder="e.g. 1234 5678 9123 0000"
+            inputmode="numeric" autocomplete="cc-number" required />
+        </div>
+        <div class="form-group-double">
+          <div class="rows">
+            <label for="name">Exp. Data</label>
+            <div class="colums">
+              <input class="expiry-data-mm" id="expiryData" name="expiryData" type="text" placeholder="MM"
+                inputmode="numeric" autocomplete="cc-exp" required />
+              <input class="expiry-data-yy" id="expiryData" name="expiryData" type="text" placeholder="YY"
+                inputmode="numeric" autocomplete="cc-exp" required />
+            </div>
+          </div>
+          <div class="rows">
+            <label for="name">CVC</label>
+            <input id="cvv" name="cvv" type="text" placeholder="e.g. 123" inputmode="numeric" autocomplete="cc-csc"
+              required />
+          </div>
+        </div>
+        <button class="button" type="">Confirm</button>
+      </form>
+      <!-- <div class="thank-you">
+        <img class="thank-you-success" src="assets/images/icon-complete.svg" alt="">
+        <p class="thank-you-title">Thank You!</p>
+        <p class="thank-you-text">We've added your card details</p>
+        <button class="button">Continue</button>
+      </div> -->
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

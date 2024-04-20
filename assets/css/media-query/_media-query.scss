@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    .container {
+        background-image: url(../../images/bg-main-desktop.png);
+        background-position: left !important;
+        background-size: 30% 100% !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 100vh;
+        align-items: center;
+
+        .card {
+            padding-inline: 8rem 4rem !important;
+            gap: 2rem;
+
+            .card-front {
+                order: 1;
+                margin-top: 0;
+                max-width: 400px;
+
+                .data-logo-card-front {
+
+                    padding: 1.3rem;
+                }
+            }
+
+            .card-back {
+                order: 2;
+                max-width: 400px;
+            }
+        }
+
+        .form {
+            padding-inline: 4rem 8rem !important;
+            width: 400px;
+        }
+    }
+
+
+}
