@@ -76,7 +76,7 @@ table {
     order: 2;
     max-width: 400px;
   }
-  .container .form {
+  .container .form-datos {
     padding-inline: 4rem 8rem !important;
     width: 400px;
   }
@@ -97,6 +97,10 @@ body button {
   margin-block: 1.3rem;
   width: 100%;
   text-transform: none;
+  cursor: pointer;
+}
+body .hidden {
+  display: none !important;
 }
 
 .container {
@@ -109,6 +113,7 @@ body button {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
+  letter-spacing: 2px;
 }
 .container .card img {
   width: 100%;
@@ -132,7 +137,6 @@ body button {
   justify-content: space-between;
 }
 .container .card-front .data-logo-card-front .card-number {
-  letter-spacing: 2px;
   font-size: 25px;
   font-weight: 400;
 }
@@ -177,6 +181,11 @@ body button {
   font-size: 14px;
   color: hsl(278, 68%, 11%);
 }
+.container form .message-error {
+  color: hsl(0, 100%, 66%);
+  font-weight: 500;
+  font-size: 12px;
+}
 .container form input {
   border-style: solid;
   border-color: hsl(270, 3%, 87%);
@@ -186,6 +195,9 @@ body button {
   padding-inline: 1rem;
   font-size: 20px;
   transition: 0.3s;
+}
+.container form .input-error {
+  border-color: hsl(0, 100%, 66%) !important;
 }
 .container form input:focus {
   outline: none;
